@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ALInsertionSort
 {
@@ -40,9 +41,13 @@ public class ALInsertionSort
 		System.out.println(sorted);
 
 		//Move the data back to the array
+		for(int mark = 0; mark < sorted.size(); mark++)
+		{
+			myNumbers[mark] = sorted.get(mark);
+		}
 
 		//Print the contents of the array
-
+		System.out.println(Arrays.toString(myNumbers));
     }
 
 
